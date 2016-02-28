@@ -4,9 +4,9 @@
 
 $Users = import-csv C:\Users.csv
 ForEach ($User in $Users) {
-$Pass = "Laget"
+$Pass = "Laget1955"
     $Epost=$User.UserPrincipalName 
-    $Pass=$Pass + (Get-Random -Maximum 10000 -Minimum 1000)
-    (Set-MsolUserPassword -UserPrincipalName $User.UserPrincipalName -NewPassword $Pass -ForceChangePassword $TRUE)
+    $Pass=$Pass + (Get-Random -Maximum 10000 -Minimum 1000)    
+    Set-MsolUserPassword -UserPrincipalName $User.UserPrincipalName -NewPassword $Pass -ForceChangePassword $TRUE
     $Epost + " Passordet på din nye epost-konto er: " + $Pass + " `r`nMed vennelig hilsen Jon, UniSoft."| Out-File c:\$Epost.txt
     } 

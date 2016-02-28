@@ -1,0 +1,1 @@
+﻿Test-MigrationServerAvailability -IMAP -RemoteServer mail.unisoft.no -Port 143 -Security Ssl
