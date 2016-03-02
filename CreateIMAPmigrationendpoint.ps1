@@ -1,2 +1,2 @@
 ﻿New-MigrationEndpoint -IMAP Imap-Migration-endpoint IMAPEndpoint -RemoteServer mail.unisoft.no -Port 143 -Security Ssl
-Get-MigrationEndpoint Imap-Migration-endpoint | Format-List EndpointType,RemoteServer,Port,Security,Max*
+#Get-MigrationEndpoint Imap-Migration-endpoint | Format-List EndpointType,RemoteServer,Port,Security,Max*
