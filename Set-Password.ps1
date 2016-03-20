@@ -1,4 +1,4 @@
-﻿Get-MsolUser | Select UserPrincipalName | Export-Csv C:\Users.csv -NoTypeInformation
+﻿Get-MsolUser | Select-object UserPrincipalName | Export-Csv C:\Users.csv -NoTypeInformation
 
 #Import-Csv "C:\Users.csv" | % { Set-MsolUserPassword -userPrincipalName "$_.UserPrincipalName" -NewPassword "$PASS" -ForceChangePassword $True } //funker av en eller annen grunn ikke
 
