@@ -1,0 +1,1 @@
+﻿(get-WmiObject -Class Win32_BIOS).serialnumber
